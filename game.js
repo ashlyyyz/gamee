@@ -24,7 +24,7 @@ const CONFIG = {
     ENEMY_SIZE: 25,
     BOSS_SIZE: 45,
     HEART_SIZE: 28,
-    PLAYER_SPEED: 3,
+    PLAYER_SPEED: 4,
     FOOD_SPAWN_RATE: 90,
     ENEMY_SPAWN_RATE: 90,
     HEART_SPAWN_INTERVAL: 180,
@@ -512,7 +512,7 @@ function drawTitleScreen() {
     const buttons = [
         { text: '▶ PLAY', x: 80, color: '#3b7a5e' },
         { text: '📖 STORY', x: 230, color: '#7d6b4b' },
-        { text: '🏆 HIGHEST SCORE', x: 380, color: '#2e6b8a' },
+        { text: '🏆 HIGHEST SCORE', x: 360, color: '#2e6b8a' },
         { text: '🎬 CREDITS', x: 580, color: '#5f4f6b' },
         { text: '🚪 LOGOUT', x: 730, color: '#8b3a3a' }
     ];
@@ -543,7 +543,7 @@ function drawHighScoresScreen() {
     ctx.fillStyle = '#f0f8f0';
     ctx.font = 'bold 40px Arial';
     ctx.textAlign = 'center';
-    ctx.fillText('🏆 High Scores', 420, 70);
+    ctx.fillText('🏆 High Scores', 410, 70);
     
     const scores = getHighScores();
     
@@ -840,7 +840,7 @@ function drawGameScreen() {
     ctx.textBaseline = 'middle';
     ctx.shadowColor = 'rgba(46,204,113,0.5)';
     ctx.shadowBlur = 15;
-    ctx.fillText('🦸', player.x, player.y);
+    ctx.fillText('💩', player.x, player.y);
     ctx.shadowBlur = 0;
     ctx.globalAlpha = 1;
     
@@ -1038,6 +1038,7 @@ function drawVictoryScreen() {
     ctx.fillStyle = '#d0e8e0';
     ctx.font = '15px Arial';
     const messages = [
+        
         '🌳 Parks are green again',
         '🏫 Schools serve nutritious meals',
         '😊 Citizens are healthy and happy',
@@ -1362,7 +1363,7 @@ function defeatBoss() {
             game.screen = 'victory';
             game.isVictory = true;
             game.selectedButton = 0;
-            showToast('🏆 Nutrition Town is saved!', 3000);
+            showToast('🏆 Nutrition Town is saved! 🎉 CONGRATULATIONS LANGGA! 🎉', 3000);
         } else {
             game.screen = 'levelComplete';
             game.selectedButton = 0;
