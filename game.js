@@ -291,7 +291,7 @@ function drawLoginScreen() {
     titleGrad.addColorStop(0, '#a8e063');
     titleGrad.addColorStop(1, '#56ab2f');
     ctx.fillStyle = titleGrad;
-    ctx.fillText('🍏 ASHLY'S NUTRITION QUEST, 450, 80);
+    ctx.fillText("🍏 ASHLY'S NUTRITION QUEST", 450, 80);
     ctx.shadowBlur = 0;
     ctx.shadowOffsetY = 0;
     ctx.fillStyle = '#b8e0d0';
@@ -1042,7 +1042,7 @@ function drawVictoryScreen() {
         '🌳 Parks are green again',
         '🏫 Schools serve nutritious meals',
         '😊 Citizens are healthy and happy',
-        '🎊 Nutrition Month is celebrated by all!'
+        '🎊 Nutrition Month is celebrated by all!',
         "🍏✨ Every healthy bite is a quiet promise to yourself: to grow stronger, live brighter, and become the best version of who you can be." 
         
     ];
