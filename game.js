@@ -291,12 +291,12 @@ function drawLoginScreen() {
     titleGrad.addColorStop(0, '#a8e063');
     titleGrad.addColorStop(1, '#56ab2f');
     ctx.fillStyle = titleGrad;
-    ctx.fillText('🍏 NUTRITION TOWN', 450, 80);
+    ctx.fillText('🍏 ASHLY'S NUTRITION QUEST, 450, 80);
     ctx.shadowBlur = 0;
     ctx.shadowOffsetY = 0;
     ctx.fillStyle = '#b8e0d0';
     ctx.font = '16px Arial';
-    ctx.fillText('— save the city, eat healthy —', 450, 120);
+    ctx.fillText('— Defeat Junk Food. Restore Healthy Living. —', 450, 120);
     
     // Login/Register Box
     const boxX = 200, boxY = 160, boxW = 500, boxH = 380;
@@ -543,7 +543,7 @@ function drawHighScoresScreen() {
     ctx.fillStyle = '#f0f8f0';
     ctx.font = 'bold 40px Arial';
     ctx.textAlign = 'center';
-    ctx.fillText('🏆 High Scores', 450, 90);
+    ctx.fillText('🏆 High Scores', 420, 70);
     
     const scores = getHighScores();
     
@@ -681,15 +681,17 @@ function drawCreditsScreen() {
     ctx.fillText('🎬 Credits', 450, 100);
     
     const credits = [
+        "QUEEN ASHLY COLONGAN",
+        '',
         '🍏 Nutrition Town',
-        '',
         'Created for Nutrition Month 2026',
-        '',
         '🎮 Game Design: PixelForge Studio',
         '📚 Educational Content: Nutrition Experts',
-        '',
         '❤️ Heart Power-ups: Collect for extra lives!',
-        '🌱 "Eat healthy, live strong!"'
+        '🌱 "Eat healthy, live strong!"',
+        "",
+        "🥗 Good nutrition isn't a diet—it's the foundation of a healthier and happier life.",
+        "🌿 Nutrition is not about perfection; it's about making healthier choices, one meal at a time."
     ];
     
     ctx.textAlign = 'center';
@@ -1040,6 +1042,8 @@ function drawVictoryScreen() {
         '🏫 Schools serve nutritious meals',
         '😊 Citizens are healthy and happy',
         '🎊 Nutrition Month is celebrated by all!'
+        "🍏✨ Every healthy bite is a quiet promise to yourself: to grow stronger, live brighter, and become the best version of who you can be." 
+        
     ];
     messages.forEach((m, i) => {
         ctx.fillText(m, 450, 440 + i * 26);
